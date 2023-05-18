@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +24,19 @@ Route::get('/login', function () {
 
 Route::get('/register', function () {
     return view('auth.register');
+});
+
+Route::get('/login', [AuthController::class, 'LoginPage'])->name('login');
+Route::get('/register', [AuthController::class, 'RegisterPage'])->name('register');
+
+Route::post('/logout', [AuthController::class, 'destroy'])
+    ->middleware('auth')
+    ->name('logout');
+
+Route::post('/login', [AuthController::class, 'login']);
+
+Route::prefix('penulis')->name('penulis.')->middleware('auth')->group(function () {
+    Route::get('management-artikel', function () {
+        return view('penulis.management-artikel');
+    })->name('management-artikel');
 });
