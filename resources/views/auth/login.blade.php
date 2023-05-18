@@ -20,7 +20,7 @@
                     <div>
                         <img class="mx-auto h-12 w-auto" src="/assets/Artikelin.png" alt="Logo">
                         <h6 class="mt-6 text-center text-base leading-9 font-medium text-gray-500">
-                            Login ke akun Artikelinmu.
+                            Login ke akun Artikelinmu sebagai penulis.
                         </h6>
                     </div>
                     <form class="mt-8" action="" method="POST">
@@ -52,8 +52,11 @@
                             </div>
                         </div>
                     </form>
+                    <div class="mt-4 text-sm text-center">
+                        <p class="text-gray-600">Belum memiliki akun? <a href="/register"
+                                class="text-red-600 font-medium hover:text-red-500">Register untuk masuk</a></p>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
