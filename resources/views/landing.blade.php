@@ -18,8 +18,12 @@
     </header>
 
     {{-- Ini Isi Landingnya --}}
-    <div>
-
+    <div class="mt-16">
+        <div>
+            <p class="text-base font-semibold text-gray-500 font-mono">
+                Welcome To Artikelin
+            </p>
+        </div>
     </div>
 
 
