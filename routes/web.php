@@ -32,7 +32,7 @@ Route::get('/register', [AuthController::class, 'RegisterPage'])->name('register
 Route::post('/logout', [AuthController::class, 'destroy'])
     ->middleware('auth')
     ->name('logout');
-
+Route::post('/register', [AuthController::class, 'Register']);
 Route::post('/login', [AuthController::class, 'login']);
 
 Route::prefix('penulis')->name('penulis.')->middleware('auth')->group(function () {

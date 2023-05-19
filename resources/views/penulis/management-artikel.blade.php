@@ -12,8 +12,14 @@
 </head>
 
 <body>
-    <div>
+    <div class="mt-16">
+        <x-navbar />
+        <x-sidebar />
 
+        <div class="pl-4 pr-4 sm:ml-64">
+            @livewire('artikel-table')
+
+        </div>
     </div>
 
     {{-- Ini JS yg dibutuhin --}}
