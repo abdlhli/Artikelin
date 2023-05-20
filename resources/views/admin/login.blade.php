@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Login Artikelin</title>
+    <title>Login Admin Artikelin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="@vite(['resources/css/app.css', 'resources/js/app.js'])">
     <link href="{{ asset('css/flowbite.css') }}" rel="stylesheet">
@@ -33,10 +33,10 @@
                     <div>
                         <img class="mx-auto h-12 w-auto" src="/assets/Artikelin.png" alt="Logo">
                         <h6 class="mt-6 text-center text-base leading-9 font-medium text-gray-500">
-                            Login ke akun Artikelinmu sebagai penulis.
+                            Login ke akun Artikelinmu sebagai Admin.
                         </h6>
                     </div>
-                    <form class="mt-8" action="{{ route('login') }}" method="POST">
+                    <form class="mt-8" action="{{ route('login-admin') }}" method="POST">
                         @csrf
                         <div class="rounded-md shadow-sm">
                             <div>
@@ -64,17 +64,7 @@
                                     ke halaman landing page</a>
                             </div>
                         </div>
-                        <div class="text-center mt-4">
-                            <a href="/login-admin" class="text-gray-500 text-sm font-medium hover:text-gray-700">Login
-                                sebagai admin</a>
-                        </div>
-
-
                     </form>
-                    <div class="mt-4 text-sm text-center">
-                        <p class="text-gray-600">Belum memiliki akun? <a href="/register"
-                                class="text-red-600 font-medium hover:text-red-500">Register untuk masuk</a></p>
-                    </div>
                 </div>
             </div>
         </div>

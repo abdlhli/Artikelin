@@ -23,4 +23,14 @@ class Artikel extends Model
         'password'
     ];
     protected $primaryKey = 'id_artikel';
+
+    public function penulis()
+    {
+        return $this->belongsTo(Penulis::class, 'id_penulis');
+    }
+
+    public function komentar()
+    {
+        return $this->belongsToMany(Komentar::class, 'tb_detail', 'id_artikel', 'id_komentar');
+    }
 }

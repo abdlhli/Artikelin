@@ -91,7 +91,6 @@ class AuthController extends Controller
 
         $request->session()->regenerateToken();
 
-        Session::flash('logout', 'Logout Berhasil!');
-        return redirect('/login');
+        return redirect('/');
     }
 }

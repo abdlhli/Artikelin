@@ -9,7 +9,7 @@
             <div class="flex items-center">
                 <div class="flex items-center ml-3">
                     <div class="flex items-center font-semibold">
-                        <div>Akun Penulis : {{ auth()->user()->username }}</div>
+                        <div>Login Sebagai Admin</div>
                     </div>
                 </div>
             </div>

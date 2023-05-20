@@ -9,8 +9,11 @@ class ArtikelTable extends Component
 {
     public function render()
     {
+        $user = auth()->user();
+        $artikels = Artikel::where('id_penulis', $user->id_penulis)->get();
+
         return view('livewire.artikel-table', [
-            'artikels' => Artikel::all(),
+            'artikels' => $artikels,
         ]);
     }
 }

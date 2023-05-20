@@ -5,7 +5,7 @@
         <ul class="relative m-0 list-none px-[0.2rem]">
             <li class="relative">
                 <a class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-700 outline-none transition duration-300 ease-linear  hover:bg-red-400/10 hover:text-red-600 hover:outline-none focus:bg-red-400/10 focus:text-red-600 focus:outline-none active:bg-red-400/10 active:text-red-600 active:outline-none data-[te-sidenav-state-active]:text-red-600 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-                    href="{{ route('penulis.management-artikel') }}">
+                    href="{{ route('admin.management-artikel') }}">
                     <span
                         class="mr-4 [&amp;>svg]:h-3.5 [&amp;>svg]:w-3.5 [&amp;>svg]:fill-gray-700 [&amp;>svg]:transition [&amp;>svg]:duration-300 [&amp;>svg]:ease-linear group-hover:[&amp;>svg]:fill-red-600 group-focus:[&amp;>svg]:fill-red-600 group-active:[&amp;>svg]:fill-red-600 group-[te-sidenav-state-active]:[&amp;>svg]:fill-red-600 motion-reduce:[&amp;>svg]:transition-none dark:[&amp;>svg]:fill-gray-300 dark:group-hover:[&amp;>svg]:fill-gray-300 ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -17,7 +17,23 @@
                             <rect x="3" y="14" width="7" height="7"></rect>
                         </svg>
                     </span>
-                    <span class=" font-semibold">List Artikelmu</span>
+                    <span class=" font-semibold">List Semua Artikel</span>
+                </a>
+            </li>
+            <li class="relative">
+                <a class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-700 outline-none transition duration-300 ease-linear  hover:bg-red-400/10 hover:text-red-600 hover:outline-none focus:bg-red-400/10 focus:text-red-600 focus:outline-none active:bg-red-400/10 active:text-red-600 active:outline-none data-[te-sidenav-state-active]:text-red-600 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                    href="{{ route('admin.management-penulis') }}">
+                    <span
+                        class="mr-4 [&amp;>svg]:h-3.5 [&amp;>svg]:w-3.5 [&amp;>svg]:fill-gray-700 [&amp;>svg]:transition [&amp;>svg]:duration-300 [&amp;>svg]:ease-linear group-hover:[&amp;>svg]:fill-red-600 group-focus:[&amp;>svg]:fill-red-600 group-active:[&amp;>svg]:fill-red-600 group-[te-sidenav-state-active]:[&amp;>svg]:fill-red-600 motion-reduce:[&amp;>svg]:transition-none dark:[&amp;>svg]:fill-gray-300 dark:group-hover:[&amp;>svg]:fill-gray-300 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3" />
+                            <circle cx="12" cy="10" r="3" />
+                            <circle cx="12" cy="12" r="10" />
+                        </svg>
+                    </span>
+                    <span class=" font-semibold">List Semua Penulis</span>
                 </a>
             </li>
             <li class="fixed bottom-0">

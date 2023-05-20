@@ -21,4 +21,9 @@ class Penulis extends Authenticatable
         'password'
     ];
     protected $primaryKey = 'id_penulis';
+
+    public function artikels()
+    {
+        return $this->hasMany(Artikel::class, 'id_penulis');
+    }
 }
